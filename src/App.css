@@ -1,0 +1,87 @@
+/* Reset and global styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Root container: full viewport, centered */
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffc0cb, #ffffff);
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Common screen container (centered content) */
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Full-screen click area for the journey stage */
+.journey-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+}
+
+/* Button styling */
+button {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+/* Modal popup styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Final proposal background (example confetti/heart gradient) */
+.final-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at center, rgba(255, 182, 193, 0.3), transparent 70%);
+}
